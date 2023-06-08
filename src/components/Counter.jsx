@@ -15,10 +15,10 @@ const Counter = ( ) => {
      <div>
          <h1>Contador</h1>
          <p>El valor actual es: {count}</p>
-         <button onClick={handleIncrement}>Incrementar</button>
-         <button onClick={handleDecrement}>Disminur</button>
+         <button onClick={handleIncrement}>mostrar/ocultar</button>
+         <button onClick={handleDecrement}>mostrar/ocultar</button>
      </div>
     );
-};
+}
 
 export default Counter;
