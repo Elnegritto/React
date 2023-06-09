@@ -1,4 +1,5 @@
 import React, { useState } from 'react'; 
+import "../mensaje.css"
 
 const Message = ({ text}) => {
     const [showMessage, setShowMessage] = useState(false);
@@ -6,10 +7,11 @@ const Message = ({ text}) => {
     const handleClick = () => {
         setShowMessage(!showMessage);
     };
+    
        return (
         <div>
             <button onClick={handleClick}>mostrar/ocultar</button>
-            {showMessage && <p>{text}</p>}
+            {showMessage && <p className='mensaje'>{text}</p>}
         </div>
        );
 }
